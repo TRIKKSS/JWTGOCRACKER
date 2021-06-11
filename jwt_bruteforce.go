@@ -30,7 +30,7 @@ func main(){
 	crack, err := bruteforce(decryptedHead, decryptedPayload, wordlist, token)
 	if err == true{
 		elapsed := time.Since(start)
-		fmt.Println("[+] password crack !")
+		fmt.Println("[+] password cracked !")
 		fmt.Println("[+] the secret key is " + crack)
 		fmt.Printf("[*] execution time : %s", elapsed)
 	} else {
